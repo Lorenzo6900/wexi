@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="_ds/quickpass-design-system-a1a47acf-86fb-43c5-9f7d-0019e2480522/colors_and_type.css">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #F8F9FC; color: #0F172A; }
+    a { color: inherit; text-decoration: none; }
+    a:hover { color: #5B40D9; }
+  </style>
+</helmet>
+
+<!-- NAVBAR -->
+<nav style="position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: #ffffff; border-bottom: 1px solid #E2E8F0; height: 68px; display: flex; align-items: center; padding: 0 40px;">
+  <div style="max-width: 1200px; width: 100%; margin: 0 auto; display: flex; align-items: center; justify-content: space-between;">
+    <!-- Logo -->
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <img src="uploads/logo-1784319269821.png" alt="Wexi" style="height: 36px; width: auto;">
+      <span style="font-size: 22px; font-weight: 800; letter-spacing: -0.5px; background: linear-gradient(135deg, #3B3FD9 0%, #8B2FC9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Wexi</span>
+    </div>
+    <!-- Nav links -->
+    <div style="display: flex; align-items: center; gap: 32px;">
+      <a href="#servicios" style="font-size: 15px; font-weight: 500; color: #475569; transition: color 0.2s;" style-hover="color: #5B40D9">Servicios</a>
+      <a href="#casos" style="font-size: 15px; font-weight: 500; color: #475569;">Casos</a>
+      <a href="#quienes" style="font-size: 15px; font-weight: 500; color: #475569;">Quiénes somos</a>
+      <a href="#faq" style="font-size: 15px; font-weight: 500; color: #475569;">FAQ</a>
+    </div>
+    <!-- CTA -->
+    <a href="https://wa.me/5491155703088" target="_blank" style="display: flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #3B3FD9 0%, #8B2FC9 100%); color: #fff; font-size: 14px; font-weight: 600; padding: 10px 20px; border-radius: 8px; transition: opacity 0.2s;" style-hover="opacity: 0.9">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+      Hablemos por WhatsApp
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section style="min-height: 100vh; padding-top: 68px; display: flex; align-items: center;">
+  <div style="max-width: 1200px; width: 100%; margin: 0 auto; padding: 80px 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+
+    <!-- Left: copy -->
+    <div style="display: flex; flex-direction: column; gap: 28px;">
+      <!-- Badge -->
+      <div style="display: inline-flex; align-items: center; gap: 8px; background: #EEF0FD; border: 1px solid #C7CAF7; border-radius: 999px; padding: 6px 14px; width: fit-content;">
+        <span style="width: 8px; height: 8px; border-radius: 50%; background: linear-gradient(135deg, #3B3FD9, #8B2FC9); display: inline-block; flex-shrink: 0;"></span>
+        <span style="font-size: 13px; font-weight: 600; color: #5B40D9;">CABA y Gran Buenos Aires</span>
+      </div>
+
+      <!-- Headline -->
+      <h1 style="font-size: 56px; font-weight: 800; line-height: 1.1; letter-spacing: -1.5px; color: #0F172A;">
+        Automatizá tu negocio<br>
+        <span style="background: linear-gradient(135deg, #3B3FD9 0%, #8B2FC9 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">y recuperá tu tiempo</span>
+      </h1>
+
+      <!-- Subtitle -->
+      <p style="font-size: 18px; line-height: 1.7; color: #475569; max-width: 480px;">
+        Conectamos tus herramientas favoritas — WhatsApp, Google Sheets, Calendar — para eliminar el trabajo manual repetitivo. Más pedidos procesados, menos errores, sin contratar más personal.
+      </p>
+
+      <!-- CTAs -->
+      <div style="display: flex; align-items: center; gap: 16px; flex-wrap: wrap;">
+        <a href="https://wa.me/5491155703088" target="_blank" style="display: flex; align-items: center; gap: 8px; background: linear-gradient(135deg, #3B3FD9 0%, #8B2FC9 100%); color: #fff; font-size: 15px; font-weight: 600; padding: 14px 28px; border-radius: 10px; transition: opacity 0.2s; box-shadow: 0 4px 20px rgba(91,64,217,0.3);">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+          Hablar con nosotros
+        </a>
+        <a href="#servicios" style="font-size: 15px; font-weight: 600; color: #5B40D9; display: flex; align-items: center; gap: 6px;">
+          Ver servicios
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+        </a>
+      </div>
+
+      <!-- Social proof micro-line -->
+      <p style="font-size: 13px; color: #94A3B8;">Sin permanencia · Resultados en semanas · Soporte local presencial</p>
+    </div>
+
+    <!-- Right: visual cards -->
+    <div style="position: relative; display: flex; flex-direction: column; gap: 16px;">
+
+      <!-- Card 1 -->
+      <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px 24px; display: flex; align-items: flex-start; gap: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); transform: translateX(20px);">
+        <div style="width: 44px; height: 44px; border-radius: 12px; background: #EEF0FD; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 01-.825-.242m9.345-8.334a2.126 2.126 0 00-.476-.095 48.64 48.64 0 00-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0011.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"></path></svg>
+        </div>
+        <div>
+          <p style="font-size: 14px; font-weight: 600; color: #0F172A; margin-bottom: 4px;">Pedidos a cocina sin errores</p>
+          <p style="font-size: 13px; color: #64748B; line-height: 1.5;">Cada pedido de WhatsApp llega directo a la planilla de cocina y se registra solo.</p>
+        </div>
+        <div style="margin-left: auto; flex-shrink: 0; width: 24px; height: 24px; background: #DCFCE7; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#16A34A" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px 24px; display: flex; align-items: flex-start; gap: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.05);">
+        <div style="width: 44px; height: 44px; border-radius: 12px; background: #EEF0FD; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"></path></svg>
+        </div>
+        <div>
+          <p style="font-size: 14px; font-weight: 600; color: #0F172A; margin-bottom: 4px;">Turnos confirmados automáticamente</p>
+          <p style="font-size: 13px; color: #64748B; line-height: 1.5;">El cliente reserva, recibe confirmación y el turno aparece directo en Google Calendar.</p>
+        </div>
+        <div style="margin-left: auto; flex-shrink: 0; width: 24px; height: 24px; background: #DCFCE7; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#16A34A" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 16px; padding: 20px 24px; display: flex; align-items: flex-start; gap: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.05); transform: translateX(20px);">
+        <div style="width: 44px; height: 44px; border-radius: 12px; background: #EEF0FD; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+          <svg width="22" height="22" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803 7.5 7.5 0 0015.803 15.803z"></path></svg>
+        </div>
+        <div>
+          <p style="font-size: 14px; font-weight: 600; color: #0F172A; margin-bottom: 4px;">Consultas de stock en segundos</p>
+          <p style="font-size: 13px; color: #64748B; line-height: 1.5;">Un bot consulta tu planilla y responde al cliente en WhatsApp sin que vos intervengas.</p>
+        </div>
+        <div style="margin-left: auto; flex-shrink: 0; width: 24px; height: 24px; background: #DCFCE7; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="#16A34A" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+        </div>
+      </div>
+
+      <!-- Decorative blob -->
+      <div style="position: absolute; top: -40px; right: -40px; width: 200px; height: 200px; background: linear-gradient(135deg, rgba(59,63,217,0.08) 0%, rgba(139,47,201,0.08) 100%); border-radius: 50%; z-index: -1; filter: blur(40px);"></div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section id="servicios" style="background: #F8F9FC; padding: 96px 40px; border-top: 1px solid #E2E8F0;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    <!-- Header -->
+    <div style="text-align: center; margin-bottom: 64px;">
+      <span style="display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #5B40D9; text-transform: uppercase; margin-bottom: 12px;">Lo que hacemos</span>
+      <h2 style="font-size: 42px; font-weight: 800; color: #0F172A; letter-spacing: -1px; line-height: 1.15;">Servicios</h2>
+      <p style="margin-top: 16px; font-size: 17px; color: #475569; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.7;">Desde la automatización de procesos hasta el diseño de tu sitio web — todo desde un mismo lugar.</p>
+    </div>
+
+    <!-- Cards -->
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; align-items: start;">
+
+      <!-- Card 1: Automatización (destacada) -->
+      <div style="position: relative; background: #fff; border: 2px solid #C7CAF7; border-radius: 20px; padding: 36px 32px; display: flex; flex-direction: column; gap: 20px; box-shadow: 0 4px 24px rgba(91,64,217,0.1);">
+        <!-- Badge -->
+        <div style="position: absolute; top: -13px; left: 32px; background: linear-gradient(135deg, #3B3FD9, #8B2FC9); color: #fff; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; padding: 4px 12px; border-radius: 999px; text-transform: uppercase;">Más solicitado</div>
+        <!-- Icon -->
+        <div style="width: 52px; height: 52px; border-radius: 14px; background: #EEF0FD; border: 1px solid #C7CAF7; display: flex; align-items: center; justify-content: center;">
+          <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg>
+        </div>
+        <div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #0F172A; margin-bottom: 10px;">Automatización con n8n</h3>
+          <p style="font-size: 14px; color: #475569; line-height: 1.7;">Diseñamos e implementamos flujos de trabajo que eliminan tareas manuales repetitivas y conectan las herramientas que ya usás.</p>
+        </div>
+        <ul style="display: flex; flex-direction: column; gap: 10px; list-style: none;">
+          <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #334155;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+            Chatbot de pedidos (restaurantes, delivery)
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #334155;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+            Sistema de reserva de turnos automático
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #334155;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+            Asistente de consultas de stock en tiempo real
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #334155;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+            Integración con WhatsApp, Google Sheets, Calendar
+          </li>
+        </ul>
+        <a href="https://wa.me/5491155703088" target="_blank" style="margin-top: 8px; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #3B3FD9, #8B2FC9); color: #fff; font-size: 14px; font-weight: 600; padding: 12px 20px; border-radius: 10px; transition: opacity 0.2s;">
+          Consultar por este servicio
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+        </a>
+      </div>
+
+      <!-- Card 2: Web -->
+      <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 20px; padding: 36px 32px; display: flex; flex-direction: column; gap: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
+        <div style="width: 52px; height: 52px; border-radius: 14px; background: #EEF0FD; border: 1px solid #C7CAF7; display: flex; align-items: center; justify-content: center;">
+          <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0H3"></path></svg>
+        </div>
+        <div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #0F172A; margin-bottom: 10px;">Desarrollo web</h3>
+          <p style="font-size: 14px; color: #475569; line-height: 1.7;">Creamos tu presencia digital: desde una landing page hasta un sitio completo con catálogo de productos o servicios.</p>
+        </div>
+        <ul style="display: flex; flex-direction: column; gap: 10px; list-style: none;">
+          <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #334155;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+            Landing pages y sitios institucionales
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #334155;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+            Catálogos de productos o servicios
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #334155;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+            Diseño adaptado a la identidad de tu marca
+          </li>
+        </ul>
+        <a href="https://wa.me/5491155703088" target="_blank" style="margin-top: auto; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: transparent; border: 1px solid #C7CAF7; color: #5B40D9; font-size: 14px; font-weight: 600; padding: 12px 20px; border-radius: 10px;">
+          Consultar por este servicio
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+        </a>
+      </div>
+
+      <!-- Card 3: Diseño -->
+      <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 20px; padding: 36px 32px; display: flex; flex-direction: column; gap: 20px; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
+        <div style="width: 52px; height: 52px; border-radius: 14px; background: #EEF0FD; border: 1px solid #C7CAF7; display: flex; align-items: center; justify-content: center;">
+          <svg width="26" height="26" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42"></path></svg>
+        </div>
+        <div>
+          <h3 style="font-size: 20px; font-weight: 700; color: #0F172A; margin-bottom: 10px;">Diseño</h3>
+          <p style="font-size: 14px; color: #475569; line-height: 1.7;">Cada proyecto tiene que verse bien. Acompañamos el desarrollo con una imagen coherente y profesional para que tu negocio cause la impresión correcta.</p>
+        </div>
+        <ul style="display: flex; flex-direction: column; gap: 10px; list-style: none;">
+          <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #334155;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+            Identidad visual para tu proyecto web o chatbot
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #334155;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+            Materiales de comunicación y redes
+          </li>
+          <li style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #334155;">
+            <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5"></path></svg>
+            Estética consistente en todos los canales
+          </li>
+        </ul>
+        <a href="https://wa.me/5491155703088" target="_blank" style="margin-top: auto; display: inline-flex; align-items: center; justify-content: center; gap: 8px; background: transparent; border: 1px solid #C7CAF7; color: #5B40D9; font-size: 14px; font-weight: 600; padding: 12px 20px; border-radius: 10px;">
+          Consultar por este servicio
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- A QUIÉN AYUDAMOS -->
+<section id="quienes" style="background: #F8F9FC; padding: 96px 40px; border-top: 1px solid #E2E8F0;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    <!-- Header -->
+    <div style="text-align: center; margin-bottom: 64px;">
+      <span style="display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #5B40D9; text-transform: uppercase; margin-bottom: 12px;">Clientes ideales</span>
+      <h2 style="font-size: 42px; font-weight: 800; color: #0F172A; letter-spacing: -1px; line-height: 1.15;">¿Tu negocio encaja?</h2>
+      <p style="margin-top: 16px; font-size: 17px; color: #475569; max-width: 540px; margin-left: auto; margin-right: auto; line-height: 1.7;">Trabajamos con PyMEs y pequeños negocios locales de cualquier rubro con atención al público. No hace falta ser tech.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start;">
+
+      <!-- Left: rubros + señales -->
+      <div style="display: flex; flex-direction: column; gap: 24px;">
+
+        <!-- Rubros -->
+        <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px;">
+          <h3 style="font-size: 17px; font-weight: 700; color: #0F172A; margin-bottom: 20px;">Rubros donde ya trabajamos</h3>
+          <div style="display: flex; flex-direction: column; gap: 12px;">
+            <div style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: #F8F9FC; border-radius: 12px;">
+              <div style="width: 38px; height: 38px; border-radius: 10px; background: #EEF0FD; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"></path></svg>
+              </div>
+              <div>
+                <p style="font-size: 14px; font-weight: 600; color: #0F172A;">Gastronomía</p>
+                <p style="font-size: 13px; color: #64748B;">Restaurantes, bares, rotiserías, delivery</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: #F8F9FC; border-radius: 12px;">
+              <div style="width: 38px; height: 38px; border-radius: 10px; background: #EEF0FD; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"></path></svg>
+              </div>
+              <div>
+                <p style="font-size: 14px; font-weight: 600; color: #0F172A;">Comercios con stock</p>
+                <p style="font-size: 13px; color: #64748B;">Indumentaria, ferreterías, distribuidoras</p>
+              </div>
+            </div>
+            <div style="display: flex; align-items: center; gap: 14px; padding: 14px 16px; background: #F8F9FC; border-radius: 12px;">
+              <div style="width: 38px; height: 38px; border-radius: 10px; background: #EEF0FD; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 012.25-2.25h13.5A2.25 2.25 0 0121 7.5v11.25m-18 0A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75m-18 0v-7.5A2.25 2.25 0 015.25 9h13.5A2.25 2.25 0 0121 11.25v7.5"></path></svg>
+              </div>
+              <div>
+                <p style="font-size: 14px; font-weight: 600; color: #0F172A;">Servicios con turnos</p>
+                <p style="font-size: 13px; color: #64748B;">Peluquerías, consultorios, talleres, estudios</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- No ideal -->
+        <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 20px; padding: 32px;">
+          <h3 style="font-size: 17px; font-weight: 700; color: #0F172A; margin-bottom: 8px;">Quién no es nuestro cliente (por ahora)</h3>
+          <p style="font-size: 13px; color: #64748B; margin-bottom: 16px;">Preferimos ser honestos antes que tomar un proyecto que no le va a servir al cliente.</p>
+          <div style="display: flex; flex-direction: column; gap: 10px;">
+            <div style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #64748B;">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#CBD5E1" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+              Empresas grandes con ERP/CRM y equipo de IT propio
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #64748B;">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#CBD5E1" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+              Negocios fuera de CABA/GBA que requieran soporte presencial
+            </div>
+            <div style="display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: #64748B;">
+              <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="#CBD5E1" stroke-width="2" style="flex-shrink:0;margin-top:2px"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path></svg>
+              Negocios sin volumen de consultas repetitivas todavía
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: señales de buen cliente -->
+      <div style="background: #fff; border: 2px solid #C7CAF7; border-radius: 20px; padding: 36px; box-shadow: 0 4px 24px rgba(91,64,217,0.08);">
+        <h3 style="font-size: 17px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">¿Te identificás con alguna de estas situaciones?</h3>
+        <p style="font-size: 14px; color: #64748B; margin-bottom: 24px;">Si es así, probablemente podamos ayudarte.</p>
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="background: #F8F9FC; border-radius: 14px; padding: 18px 20px; border-left: 3px solid #C7CAF7;">
+            <p style="font-size: 14px; color: #334155; line-height: 1.6; font-style: italic;">"Se me mezclan los pedidos y a veces se pierden o llegan mal."</p>
+          </div>
+          <div style="background: #F8F9FC; border-radius: 14px; padding: 18px 20px; border-left: 3px solid #C7CAF7;">
+            <p style="font-size: 14px; color: #334155; line-height: 1.6; font-style: italic;">"Contesto las mismas preguntas de stock veinte veces por día."</p>
+          </div>
+          <div style="background: #F8F9FC; border-radius: 14px; padding: 18px 20px; border-left: 3px solid #C7CAF7;">
+            <p style="font-size: 14px; color: #334155; line-height: 1.6; font-style: italic;">"Se me superponen turnos o me olvido de anotar alguno."</p>
+          </div>
+          <div style="background: #F8F9FC; border-radius: 14px; padding: 18px 20px; border-left: 3px solid #C7CAF7;">
+            <p style="font-size: 14px; color: #334155; line-height: 1.6; font-style: italic;">"No tengo forma de saber cuánto vendí sin revisarlo todo a mano."</p>
+          </div>
+          <div style="background: #F8F9FC; border-radius: 14px; padding: 18px 20px; border-left: 3px solid #C7CAF7;">
+            <p style="font-size: 14px; color: #334155; line-height: 1.6; font-style: italic;">"Quiero verme más profesional online pero no tengo página web."</p>
+          </div>
+        </div>
+        <a href="https://wa.me/5491155703088" target="_blank" style="margin-top: 28px; display: flex; align-items: center; justify-content: center; gap: 8px; background: linear-gradient(135deg, #3B3FD9, #8B2FC9); color: #fff; font-size: 15px; font-weight: 600; padding: 14px 24px; border-radius: 10px; transition: opacity 0.2s;">
+          Me identifico — hablemos
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CASOS -->
+<section id="casos" style="background: #ffffff; padding: 96px 40px; border-top: 1px solid #E2E8F0;">
+  <div style="max-width: 1200px; margin: 0 auto;">
+
+    <!-- Header -->
+    <div style="text-align: center; margin-bottom: 64px;">
+      <span style="display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #5B40D9; text-transform: uppercase; margin-bottom: 12px;">Proyectos desarrollados</span>
+      <h2 style="font-size: 42px; font-weight: 800; color: #0F172A; letter-spacing: -1px; line-height: 1.15;">Casos reales</h2>
+      <p style="margin-top: 16px; font-size: 17px; color: #475569; max-width: 540px; margin-left: auto; margin-right: auto; line-height: 1.7;">Esto es lo que ya construimos. Tu automatización puede ser algo similar o algo completamente distinto — nos adaptamos a tu flujo.</p>
+    </div>
+
+    <!-- Cases -->
+    <div style="display: flex; flex-direction: column; gap: 32px;">
+
+      <!-- Caso 1: Restaurante -->
+      <div style="background: #F8F9FC; border: 1px solid #E2E8F0; border-radius: 20px; padding: 40px 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: inline-flex; align-items: center; gap: 8px; width: fit-content;">
+            <span style="background: #EEF0FD; color: #5B40D9; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 999px;">Gastronomía</span>
+          </div>
+          <h3 style="font-size: 24px; font-weight: 700; color: #0F172A; line-height: 1.3;">Chatbot de pedidos para restaurante</h3>
+          <p style="font-size: 15px; color: #475569; line-height: 1.7;"><strong style="color: #0F172A;">El problema:</strong> Los pedidos llegaban por WhatsApp, el dueño los reenviaba a cocina a mano y a veces se perdían o llegaban mal.</p>
+          <p style="font-size: 15px; color: #475569; line-height: 1.7;"><strong style="color: #0F172A;">La solución:</strong> Un bot toma el pedido del cliente, lo envía automáticamente a cocina, lo registra en Google Sheets y genera un resumen semanal de ventas.</p>
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <span style="background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 500; color: #334155;">WhatsApp</span>
+            <span style="background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 500; color: #334155;">Google Sheets</span>
+            <span style="background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 500; color: #334155;">n8n</span>
+          </div>
+        </div>
+        <!-- Flow visual -->
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 14px; padding: 16px 20px; display: flex; align-items: center; gap: 14px;">
+            <div style="width: 36px; height: 36px; border-radius: 10px; background: #DCFCE7; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="18" height="18" fill="#16A34A" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            </div>
+            <div>
+              <p style="font-size: 13px; font-weight: 600; color: #0F172A;">Cliente manda pedido por WhatsApp</p>
+              <p style="font-size: 12px; color: #64748B;">El bot responde y confirma en segundos</p>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <svg width="16" height="24" fill="none" viewBox="0 0 16 24" stroke="#C7CAF7" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 4v16m0 0l-4-4m4 4l4-4"></path></svg>
+          </div>
+          <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 14px; padding: 16px 20px; display: flex; align-items: center; gap: 14px;">
+            <div style="width: 36px; height: 36px; border-radius: 10px; background: #EEF0FD; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"></path></svg>
+            </div>
+            <div>
+              <p style="font-size: 13px; font-weight: 600; color: #0F172A;">n8n procesa el pedido automáticamente</p>
+              <p style="font-size: 12px; color: #64748B;">Sin intervención manual</p>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <svg width="16" height="24" fill="none" viewBox="0 0 16 24" stroke="#C7CAF7" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 4v16m0 0l-4-4m4 4l4-4"></path></svg>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 14px; padding: 14px 16px; text-align: center;">
+              <p style="font-size: 12px; font-weight: 600; color: #0F172A;">Cocina notificada</p>
+              <p style="font-size: 11px; color: #64748B;">Inmediatamente</p>
+            </div>
+            <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 14px; padding: 14px 16px; text-align: center;">
+              <p style="font-size: 12px; font-weight: 600; color: #0F172A;">Registrado en Sheets</p>
+              <p style="font-size: 11px; color: #64748B;">Para reportes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caso 2: Turnos -->
+      <div style="background: #F8F9FC; border: 1px solid #E2E8F0; border-radius: 20px; padding: 40px 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: inline-flex; align-items: center; gap: 8px; width: fit-content;">
+            <span style="background: #EEF0FD; color: #5B40D9; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 999px;">Servicios con turnos</span>
+          </div>
+          <h3 style="font-size: 24px; font-weight: 700; color: #0F172A; line-height: 1.3;">Sistema de reserva de turnos automático</h3>
+          <p style="font-size: 15px; color: #475569; line-height: 1.7;"><strong style="color: #0F172A;">El problema:</strong> Los turnos se anotaban a mano, se superponían y el dueño perdía tiempo confirmando por WhatsApp uno por uno.</p>
+          <p style="font-size: 15px; color: #475569; line-height: 1.7;"><strong style="color: #0F172A;">La solución:</strong> Un bot gestiona la agenda, guarda los turnos en Google Calendar y confirma la reserva al cliente sin ninguna intervención.</p>
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <span style="background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 500; color: #334155;">WhatsApp</span>
+            <span style="background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 500; color: #334155;">Google Calendar</span>
+            <span style="background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 500; color: #334155;">n8n</span>
+          </div>
+        </div>
+        <!-- Flow visual -->
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 14px; padding: 16px 20px; display: flex; align-items: center; gap: 14px;">
+            <div style="width: 36px; height: 36px; border-radius: 10px; background: #DCFCE7; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="18" height="18" fill="#16A34A" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            </div>
+            <div>
+              <p style="font-size: 13px; font-weight: 600; color: #0F172A;">Cliente pide turno por WhatsApp</p>
+              <p style="font-size: 12px; color: #64748B;">Bot consulta disponibilidad en tiempo real</p>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <svg width="16" height="24" fill="none" viewBox="0 0 16 24" stroke="#C7CAF7" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 4v16m0 0l-4-4m4 4l4-4"></path></svg>
+          </div>
+          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+            <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 14px; padding: 14px 16px; text-align: center;">
+              <p style="font-size: 12px; font-weight: 600; color: #0F172A;">Turno en Calendar</p>
+              <p style="font-size: 11px; color: #64748B;">Guardado solo</p>
+            </div>
+            <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 14px; padding: 14px 16px; text-align: center;">
+              <p style="font-size: 12px; font-weight: 600; color: #0F172A;">Confirmación al cliente</p>
+              <p style="font-size: 11px; color: #64748B;">Automática</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Caso 3: Stock -->
+      <div style="background: #F8F9FC; border: 1px solid #E2E8F0; border-radius: 20px; padding: 40px 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;">
+        <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: inline-flex; align-items: center; gap: 8px; width: fit-content;">
+            <span style="background: #EEF0FD; color: #5B40D9; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 999px;">Comercios con stock</span>
+          </div>
+          <h3 style="font-size: 24px; font-weight: 700; color: #0F172A; line-height: 1.3;">Asistente de consultas de stock</h3>
+          <p style="font-size: 15px; color: #475569; line-height: 1.7;"><strong style="color: #0F172A;">El problema:</strong> El dueño respondía 20 veces por día "¿tienen tal producto?" interrumpiendo el trabajo para consultar la planilla.</p>
+          <p style="font-size: 15px; color: #475569; line-height: 1.7;"><strong style="color: #0F172A;">La solución:</strong> Un bot consulta el stock en tiempo real desde Google Sheets y responde al cliente por WhatsApp sin que nadie intervenga.</p>
+          <div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+            <span style="background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 500; color: #334155;">WhatsApp</span>
+            <span style="background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 500; color: #334155;">Google Sheets</span>
+            <span style="background: #fff; border: 1px solid #E2E8F0; border-radius: 8px; padding: 6px 12px; font-size: 13px; font-weight: 500; color: #334155;">n8n</span>
+          </div>
+        </div>
+        <!-- Flow visual -->
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 14px; padding: 16px 20px; display: flex; align-items: center; gap: 14px;">
+            <div style="width: 36px; height: 36px; border-radius: 10px; background: #DCFCE7; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="18" height="18" fill="#16A34A" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            </div>
+            <div>
+              <p style="font-size: 13px; font-weight: 600; color: #0F172A;">"¿Tienen zapatillas talle 42?"</p>
+              <p style="font-size: 12px; color: #64748B;">Cliente escribe por WhatsApp</p>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <svg width="16" height="24" fill="none" viewBox="0 0 16 24" stroke="#C7CAF7" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 4v16m0 0l-4-4m4 4l4-4"></path></svg>
+          </div>
+          <div style="background: #fff; border: 1px solid #E2E8F0; border-radius: 14px; padding: 16px 20px; display: flex; align-items: center; gap: 14px;">
+            <div style="width: 36px; height: 36px; border-radius: 10px; background: #EEF0FD; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 15.803 7.5 7.5 0 0015.803 15.803z"></path></svg>
+            </div>
+            <div>
+              <p style="font-size: 13px; font-weight: 600; color: #0F172A;">Bot consulta la planilla en tiempo real</p>
+              <p style="font-size: 12px; color: #64748B;">Google Sheets siempre actualizado</p>
+            </div>
+          </div>
+          <div style="display: flex; justify-content: center;">
+            <svg width="16" height="24" fill="none" viewBox="0 0 16 24" stroke="#C7CAF7" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 4v16m0 0l-4-4m4 4l4-4"></path></svg>
+          </div>
+          <div style="background: #fff; border: 1px solid #C7CAF7; border-radius: 14px; padding: 16px 20px; display: flex; align-items: center; gap: 14px;">
+            <div style="width: 36px; height: 36px; border-radius: 10px; background: #EEF0FD; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+              <svg width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#5B40D9" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"></path></svg>
+            </div>
+            <div>
+              <p style="font-size: 13px; font-weight: 600; color: #5B40D9;">"Sí, tenemos talle 42 en negro y blanco"</p>
+              <p style="font-size: 12px; color: #64748B;">Respuesta automática al cliente</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" style="background: #ffffff; padding: 96px 40px; border-top: 1px solid #E2E8F0;">
+  <div style="max-width: 800px; margin: 0 auto;">
+    <div style="text-align: center; margin-bottom: 48px;">
+      <span style="display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #5B40D9; text-transform: uppercase; margin-bottom: 12px;">Preguntas frecuentes</span>
+      <h2 style="font-size: 42px; font-weight: 800; color: #0F172A; letter-spacing: -1px; line-height: 1.15;">FAQ</h2>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;">
+      <div style="background: #F8F9FC; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px 20px;">
+        <p style="font-size: 14px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">¿Necesito saber de tecnología?</p>
+        <p style="font-size: 13px; color: #475569; line-height: 1.6;">No. Nos encargamos de todo. Solo necesitás disposición para cambiar cómo hacés algunas cosas del día a día.</p>
+      </div>
+      <div style="background: #F8F9FC; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px 20px;">
+        <p style="font-size: 14px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">¿Cuánto tiempo lleva implementar?</p>
+        <p style="font-size: 13px; color: #475569; line-height: 1.6;">La mayoría de los proyectos están funcionando en 1 a 3 semanas desde la primera reunión.</p>
+      </div>
+      <div style="background: #F8F9FC; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px 20px;">
+        <p style="font-size: 14px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">¿Las herramientas son pagas?</p>
+        <p style="font-size: 13px; color: #475569; line-height: 1.6;">Trabajamos con WhatsApp, Google Sheets y Calendar. Si hay costos extra, te los comunicamos antes de arrancar.</p>
+      </div>
+      <div style="background: #F8F9FC; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px 20px;">
+        <p style="font-size: 14px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">¿Qué pasa si algo falla?</p>
+        <p style="font-size: 13px; color: #475569; line-height: 1.6;">Somos locales — podemos juntarnos en persona. Soporte directo en CABA y GBA, sin tickets que tardan días.</p>
+      </div>
+      <div style="background: #F8F9FC; border: 1px solid #E2E8F0; border-radius: 14px; padding: 18px 20px; grid-column: 1 / -1;">
+        <p style="font-size: 14px; font-weight: 700; color: #0F172A; margin-bottom: 6px;">¿Cuánto cuesta?</p>
+        <p style="font-size: 13px; color: #475569; line-height: 1.6;">Cada proyecto es distinto, por eso no publicamos tarifas fijas. Contactanos y en la primera charla ya te damos una idea concreta.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section id="contacto" style="background: #F8F9FC; padding: 96px 40px; border-top: 1px solid #E2E8F0;">
+  <div style="max-width: 680px; margin: 0 auto; text-align: center;">
+    <span style="display: inline-block; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; color: #5B40D9; text-transform: uppercase; margin-bottom: 12px;">Hablemos</span>
+    <h2 style="font-size: 48px; font-weight: 800; color: #0F172A; letter-spacing: -1.5px; line-height: 1.1; margin-bottom: 20px;">¿Listo para empezar?</h2>
+    <p style="font-size: 18px; color: #475569; line-height: 1.7; margin-bottom: 48px;">Contanos en qué momento de tu negocio perdés más tiempo y lo analizamos juntos. Sin compromiso.</p>
+    <div style="display: flex; flex-direction: column; gap: 16px; align-items: center;">
+      <a href="https://wa.me/5491155703088" target="_blank" style="display: inline-flex; align-items: center; gap: 10px; background: linear-gradient(135deg, #3B3FD9, #8B2FC9); color: #fff; font-size: 17px; font-weight: 700; padding: 18px 40px; border-radius: 12px; box-shadow: 0 8px 32px rgba(91,64,217,0.25);">
+        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+        Escribinos por WhatsApp
+      </a>
+      <a href="mailto:lorenzolaniado@gmail.com" style="font-size: 15px; color: #5B40D9; font-weight: 500;">lorenzolaniado@gmail.com</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background: #0F172A; padding: 40px; border-top: 1px solid #1E293B;">
+  <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px;">
+    <div style="display: flex; align-items: center; gap: 10px;">
+      <span style="font-size: 20px; font-weight: 800; background: linear-gradient(135deg, #818CF8, #C084FC); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; letter-spacing: -0.5px;">Wexi</span>
+    </div>
+    <p style="font-size: 13px; color: #475569;">CABA y Gran Buenos Aires · lorenzolaniado@gmail.com</p>
+    <p style="font-size: 13px; color: #334155;">© 2025 Wexi. Todos los derechos reservados.</p>
+  </div>
+</footer></x-dc>
+</body>
+</html>
